@@ -23,7 +23,7 @@ else
     bool v = false;
     Console.Write(v);
 }
-*/
+
 
 Console.Write("Введите целое число от 1 до 7 ");
 int week_day = Convert.ToInt32(Console.ReadLine());
@@ -54,4 +54,19 @@ if (week_day == 6)
 else
 {
     Console.Write("Завтра на работу!");
+}
+*/
+
+// 4 Задача
+
+// Программа, которая покажет все числа от - введенного числа до введенного числа
+
+Console.Write("Введите натуральное число ");
+int n = Convert.ToInt32(Console.ReadLine());
+int neg_n = n * (-1);
+
+while(neg_n <= n)
+{
+    Console.WriteLine(neg_n);
+    neg_n+=1;
 }
